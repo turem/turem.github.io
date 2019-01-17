@@ -1,0 +1,87 @@
+
+/*
+ * Navbar
+ */
+.navbar-default .navbar-nav li a {
+  color: #1367e4;
+  font-size: 15px;
+  font-weight: lighter;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.navbar {
+    background-color: rgba(255,255,255,1);
+    border: 0;
+    /* border-bottom: solid #1367e4; */
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    
+    z-index: 20;
+}
+.navbar .navbar-brand {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .container {
+    margin: 10px;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+}
+
+.navbar .links {
+    float: right;
+    box-sizing: border-box;
+    
+  }
+  .navbar .links a {
+    color: #1367e4;
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 10px;
+
+  }
+
+/*
+ * Header
+ */
+.header {
+    background-color: rgba(255,255,255,0.7);
+    border: 0;
+    /* left: 25%; */
+    /* border-bottom: solid #1367e4; */
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 20;
+    
+}
+
+.header .name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 35px;
+}
+.header .description {
+  font-size: 20px;
+  margin-top: 3px;
+}
+.header .links {
+  margin-top: 25px;
+  box-sizing: border-box;
+}
+.header .links a {
+  color: #1367e4;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0 10px;
+}
+

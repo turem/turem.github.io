@@ -1,26 +1,66 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom'
+import Navbar from './Navbar'
+import Header from './Header'
+import Home from './Home'
+import About from './About'
+require('./css/navbar.css');
 
 class App extends Component {
+  static defaultProps = {
+    bottomBorderWidth: 3,
+    headerHeight: 200,
+    fadeInDistance: 50
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = { navOpacity: 0 };
+    this.updateNavOpacity = this.updateNavOpacity.bind(this);
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.updateNavOpacity);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.updateNavOpacity);
+  }
+
+  updateNavOpacity() {
+    const navbarHeight = 100; // Bootstrap default
+    const { bottomBorderWidth, headerHeight, fadeInDistance } = this.props;
+    const endFade = headerHeight - navbarHeight - bottomBorderWidth;
+    const startFade = endFade - fadeInDistance;
+    const scrolly = window.scrollY;
+
+    if (scrolly < startFade) {
+      if (this.state.opacity === 0) return;
+      this.setState({ navOpacity: 0 });
+      return;
+    }
+
+    if (scrolly > endFade) {
+      if (this.state.opacity === 1) return;
+      this.setState({ navOpacity: 1 });
+      return;
+    }
+
+    const pxPastStartFade = scrolly - startFade;
+    const navOpacity = pxPastStartFade / (endFade - startFade);
+    this.setState({ navOpacity });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar opacity={ this.state.navOpacity } borderBottomWidth={ this.props.bottomBorderWidth } />
+          <Header height={ this.props.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
+          <Route exact path='/' component={Home} />
+          <Route path='/about' component={About} />
+        </div>
+      </BrowserRouter>
     );
   }
 }
