@@ -8,8 +8,8 @@ import About from './components/About'
 class App extends Component {
   static defaultProps = {
     bottomBorderWidth: 3,
-    headerHeight: 200,
-    fadeInDistance: 50
+    headerHeight: 150,
+    fadeInDistance: 10
   };
 
   constructor(props) {
