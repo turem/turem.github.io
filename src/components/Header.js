@@ -1,5 +1,4 @@
 import React from 'react'
-require('./css/navbar.css');
 
 const Header = (props) => (
     <div className="header" style={{ height: props.height, borderBottomWidth: props.borderBottomWidth }}>

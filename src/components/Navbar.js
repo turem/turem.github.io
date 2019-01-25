@@ -1,6 +1,5 @@
 import React from 'react'
-require('./css/navbar.css');
-// require('./scripts/mainNavigationBar.js');
+require('../css/navbar.css');
 
 const Navbar = (props) => {
     const opacity = (props.opacity) ? Math.max(props.opacity, 0.2) : 0;

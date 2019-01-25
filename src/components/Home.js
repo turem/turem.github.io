@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-require('./css/index.css');
-require('./css/slideshow.css');
+require('../css/main.css');
+require('../css/slideshow.css');
 
 
 class Home extends Component {
@@ -10,7 +10,7 @@ class Home extends Component {
       <div className="Home">
         <header className="Home-header" >
         <div id="main-content">
-          <div id="home"></div>          
+            <div id="home"></div>
 
             <div id="about">
                 <h2>About Me</h2>

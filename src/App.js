@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Navbar from './Navbar'
-import Header from './Header'
-import Home from './Home'
-import About from './About'
-require('./css/navbar.css');
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Home from './components/Home'
+import About from './components/About'
 
 class App extends Component {
   static defaultProps = {
