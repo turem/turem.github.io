@@ -14,16 +14,31 @@ class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { navOpacity: 0 };
+    this.state = {
+      navOpacity: 0,
+      headerHeight: this.props.headerHeight,
+    };
     this.updateNavOpacity = this.updateNavOpacity.bind(this);
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.updateNavOpacity);
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   componentWillUnmount() {
     window.removeEventListener('scroll', this.updateNavOpacity);
+  }
+
+  updateDimensions = () => {
+    if(window.innerHeight < window.innerWidth)
+      this.setState ({
+        headerHeight: this.props.headerHeight
+      })
+    else
+    this.setState ({
+      headerHeight: 0.6*this.props.headerHeight
+    })
   }
 
   updateNavOpacity() {
@@ -55,7 +70,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar opacity={ this.state.navOpacity } borderBottomWidth={ this.props.bottomBorderWidth } />
-          <Header height={ this.props.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
+          <Header height={ this.state.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
         </div>

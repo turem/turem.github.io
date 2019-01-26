@@ -1,8 +1,9 @@
+@media only screen and (orientation: landscape) {
 $items: 4;
 $animation-time: 4s;
 $transition-time: 2s;
-$scale_min: 0.15;
-$scale_max: 0.25;
+$scale_min: 0.10;
+$scale_max: 0.20;
 
 $total-time: (($animation-time * ($items + 1))/2);
 
@@ -29,7 +30,7 @@ $total-time: (($animation-time * ($items + 1))/2);
   @for $i from 1 through $items {
     &:nth-child(#{$i}) {
       top: -30% +50%*($i/3);
-      left: -35% + 67%*(($i+1)%2);
+      left: -40% + 79%*(($i+1)%2);
       animation-name: kenburns-#{$i};
       z-index: ($items - $i);
     }
@@ -114,3 +115,4 @@ $total-time: (($animation-time * ($items + 1))/2);
 //     }
 //   }
 // }
+}

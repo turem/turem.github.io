@@ -85,3 +85,32 @@
   margin: 0 10px;
 }
 
+@media only screen and (orientation: portrait) {
+  .navbar .container{
+    margin: 5px;
+  }
+
+  .navbar .links {
+    margin: 5px;
+  }
+
+  .navbar .links a {
+    font-size: 15px;
+    margin: 5px;
+  }
+
+  .header .name{
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .header .links {
+    margin: 5px;
+  }
+
+  .header .links a {
+    text-align: center;
+    font-size: 15px;
+    float: left;
+  }
+}
