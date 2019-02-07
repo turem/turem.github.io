@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
+import BubbleSorting from './components/Sorting1'
 
 class App extends Component {
   static defaultProps = {
@@ -73,6 +74,7 @@ class App extends Component {
           <Header height={ this.state.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
+          <Route path='/sorting1' component={BubbleSorting} />
         </div>
       </BrowserRouter>
     );

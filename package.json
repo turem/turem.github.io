@@ -5,6 +5,7 @@
   "homepage": "http://turem.github.io/",
   "dependencies": {
     "create-react-class": "^15.6.3",
+    "pixi.js": "^4.8.5",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-native-orientation": "^3.1.3",
