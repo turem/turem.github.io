@@ -35,10 +35,6 @@ class Home extends Component {
             <div id="contact">
                 <h2>Contact</h2>
             </div>
-
-            <div id="contact">
-                <h2>Contact</h2>
-            </div>
           
         </div>
         </header>
