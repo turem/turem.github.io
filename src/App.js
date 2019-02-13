@@ -72,9 +72,9 @@ class App extends Component {
         <div className="App">
           <Navbar opacity={ this.state.navOpacity } borderBottomWidth={ this.props.bottomBorderWidth } />
           <Header height={ this.state.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/sorting1' component={BubbleSorting} />
+          <Route exact path={'/'} component={Home} />
+          <Route path={'/about'} component={About} />
+          <Route path={'/sorting1'} component={BubbleSorting} />
         </div>
       </BrowserRouter>
     );
