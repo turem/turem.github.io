@@ -6,7 +6,7 @@ import { HashRouter as Router } from 'react-router-dom';
 require('./css/main.css');
 require('./css/slideshow.css');
 
-ReactDOM.render(<Router basename={process.env.PUBLIC_URL}><App /></Router>, document.getElementById('root'));
+ReactDOM.render(<Router><App /></Router>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
