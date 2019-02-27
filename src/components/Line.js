@@ -3,7 +3,7 @@ import * as PIXI from "pixi.js";
 class Line extends PIXI.Graphics {
     constructor(points, lineSize, lineColor) {
         super();
-        var s = this.lineWidth = lineSize || 5;
+        var s = this.lineWidth = lineSize;
         var c = this.lineColor = lineColor || "0x000000";
         this.points = points;
         this.lineStyle(s, c)
