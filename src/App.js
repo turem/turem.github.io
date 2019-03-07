@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
+import Learning from './components/Learning'
 import BubbleSorting from './components/Sorting1'
 
 class App extends Component {
@@ -73,6 +74,7 @@ class App extends Component {
           <Header height={ this.state.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
           <Route exact path='/' component={Home} />
           <Route path='/about' component={About} />
+          <Route path='/learning' component={Learning} />
           <Route path='/sorting1' component={BubbleSorting} />
         </div>
     );
