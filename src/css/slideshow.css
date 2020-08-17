@@ -1,0 +1,131 @@
+@media only screen and (orientation: landscape) {
+  .slideshow {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .slideshow-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+    animation-name: kenburns;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  .slideshow-image:nth-child(1) {
+    top: -13.3333333333%;
+    left: -40%;
+    animation-name: kenburns-1;
+    z-index: 3;
+  }
+  .slideshow-image:nth-child(2) {
+    top: 3.3333333333%;
+    left: 39%;
+    animation-name: kenburns-2;
+    z-index: 2;
+  }
+  .slideshow-image:nth-child(3) {
+    top: 20%;
+    left: -40%;
+    animation-name: kenburns-3;
+    z-index: 1;
+  }
+  .slideshow-image:nth-child(4) {
+    top: 36.6666666667%;
+    left: 39%;
+    animation-name: kenburns-4;
+    z-index: 0;
+  }
+
+  @keyframes kenburns-1 {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    20% {
+      opacity: 1;
+      transform: scale(0.2);
+    }
+    40% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    60% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  @keyframes kenburns-2 {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    20% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    40% {
+      opacity: 1;
+      transform: scale(0.2);
+    }
+    60% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  @keyframes kenburns-3 {
+    0% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    20% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    40% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(0.2);
+    }
+    80% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+  @keyframes kenburns-4 {
+    20% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    40% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    60% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    80% {
+      opacity: 1;
+      transform: scale(0.2);
+    }
+  }
+}
