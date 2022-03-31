@@ -15,10 +15,16 @@ import GridItem from "../../components/Grid/GridItem.js";
 import Parallax from "../../components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "../../components/Header/HeaderLinks.js";
-// import SectionBasics from "./Sections/SectionBasics.js";
-// import SectionDownload from "./Sections/SectionDownload.js";
+import SectionBasics from "./Sections/SectionBasics.js";
+import SectionDownload from "./Sections/SectionDownload.js";
 
 import styles from "../../assets/jss/material-kit-react/views/components.js";
+import SectionCarousel from "./Sections/SectionCarousel.js";
+import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
+import SectionExamples from "./Sections/SectionExamples.js";
+import SectionTypography from "./Sections/SectionTypography.js";
+import SectionTabs from "./Sections/SectionTabs.js";
+import SectionPills from "./Sections/SectionPills.js";
 
 const useStyles = makeStyles(styles);
 
@@ -56,8 +62,14 @@ export default function Components(props) {
             </Parallax>
 
             <div className={classNames(classes.main, classes.mainRaised)}>
-                {/* <SectionBasics /> */}
-                {/* <SectionDownload /> */}
+                <SectionBasics />
+                <SectionDownload />
+                <SectionCarousel />
+                <SectionCompletedExamples />
+                <SectionExamples />
+                <SectionTypography />
+                <SectionTabs />
+                <SectionPills />
             </div>
             <Footer />
         </div>

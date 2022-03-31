@@ -19,12 +19,6 @@ import Parallax from "../../components/Parallax/Parallax.js";
 
 import profile from "../../assets/img/faces/profile.jpg";
 
-import studio1 from "../../assets/img/examples/studio-1.jpg";
-import studio3 from "../../assets/img/examples/studio-3.jpg";
-import work1 from "../../assets/img/examples/olu-eletu.jpg";
-import work2 from "../../assets/img/examples/clem-onojeghuo.jpg";
-import work4 from "../../assets/img/examples/mariya-georgieva.jpg";
-
 import Education from "./Education.js";
 import Experience from "./Experience.js";
 
@@ -40,7 +34,6 @@ export default function AboutPage(props) {
         classes.imgRoundedCircle,
         classes.imgFluid
     );
-    const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
     return (
         <div>
             <Header
