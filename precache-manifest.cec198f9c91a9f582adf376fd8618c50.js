@@ -1,43 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e0b68f13462e6495956ab4c2cd50024",
+    "revision": "2a0699eb301b8512da4e05a54a946c51",
     "url": "/index.html"
   },
   {
-    "revision": "91b772f1c4fb968074b7",
+    "revision": "d170050b69feb37b5c85",
     "url": "/static/css/main.126c14d6.chunk.css"
   },
   {
-    "revision": "30a7888baf402429b558",
-    "url": "/static/js/2.679a362b.chunk.js"
+    "revision": "6d6220f453618a7fd21b",
+    "url": "/static/js/2.9684105f.chunk.js"
   },
   {
-    "revision": "d09ac505fec0e9130a1d5b85fb3fa6dc",
-    "url": "/static/js/2.679a362b.chunk.js.LICENSE.txt"
+    "revision": "8dbc9bd92b344a5deca62eeacc09fc2d",
+    "url": "/static/js/2.9684105f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "91b772f1c4fb968074b7",
-    "url": "/static/js/main.b299bd24.chunk.js"
+    "revision": "d170050b69feb37b5c85",
+    "url": "/static/js/main.4db75732.chunk.js"
   },
   {
     "revision": "fa81d138de9b5b38595b",
     "url": "/static/js/runtime-main.6dd7d0e4.js"
   },
   {
+    "revision": "f1d71f777331fd7e3de116edf4ee3b67",
+    "url": "/static/media/avatar.f1d71f77.jpg"
+  },
+  {
     "revision": "1831f81eb7a05a09773adf7ba5385a99",
     "url": "/static/media/background.1831f81e.jpg"
   },
   {
-    "revision": "216ef03c54bc13771c5e1b8d8f8d5926",
-    "url": "/static/media/clem-onojeghuo.216ef03c.jpg"
+    "revision": "e52419719dd0c4c8b172136f0b625008",
+    "url": "/static/media/bg.e5241971.jpg"
   },
   {
-    "revision": "4575c40bfb8dec6713d2da51c4c4066e",
-    "url": "/static/media/mariya-georgieva.4575c40b.jpg"
+    "revision": "843781834b1db2908f08d921c6460c81",
+    "url": "/static/media/bg2.84378183.jpg"
   },
   {
-    "revision": "4112cbc1477d9e149033c5df66087e16",
-    "url": "/static/media/olu-eletu.4112cbc1.jpg"
+    "revision": "e76de24b6d8ab5e920bb4d49241ad15f",
+    "url": "/static/media/bg3.e76de24b.jpg"
+  },
+  {
+    "revision": "08e18cb904f0f3c6dd9e3d4ed72e0eca",
+    "url": "/static/media/landing.08e18cb9.jpg"
+  },
+  {
+    "revision": "090a5aabae505f67ee0981613d02ee05",
+    "url": "/static/media/profile.090a5aab.jpg"
   },
   {
     "revision": "5b8dec42572e3d1081b9450c750edecb",
@@ -58,14 +70,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a8937a23d6ce09fecc443c755c76cb7d",
     "url": "/static/media/sollers_logo.a8937a23.jpg"
-  },
-  {
-    "revision": "ae0150c08dbcc95e4f50458e02e5bd5c",
-    "url": "/static/media/studio-1.ae0150c0.jpg"
-  },
-  {
-    "revision": "1d5451ced89eabb55683e27e070bdb60",
-    "url": "/static/media/studio-3.1d5451ce.jpg"
   },
   {
     "revision": "087fa08d729676ed48d803c7db4b7c3b",
