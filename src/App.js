@@ -33,14 +33,14 @@ class App extends Component {
   }
 
   updateDimensions = () => {
-    if(window.innerHeight < window.innerWidth)
-      this.setState ({
+    if (window.innerHeight < window.innerWidth)
+      this.setState({
         headerHeight: this.props.headerHeight
       })
     else
-    this.setState ({
-      headerHeight: 0.6*this.props.headerHeight
-    })
+      this.setState({
+        headerHeight: 0.6 * this.props.headerHeight
+      })
   }
 
   updateNavOpacity() {
@@ -69,14 +69,14 @@ class App extends Component {
 
   render() {
     return (
-        <div className="App">
-          <Navbar opacity={ this.state.navOpacity } borderBottomWidth={ this.props.bottomBorderWidth } />
-          <Header height={ this.state.headerHeight } borderBottomWidth={ this.props.bottomBorderWidth } />
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/learning' component={Learning} />
-          <Route path='/sorting1' component={BubbleSorting} />
-        </div>
+      <div className="App">
+        {/* <Navbar opacity={this.state.navOpacity} borderBottomWidth={this.props.bottomBorderWidth} />
+        <Header height={this.state.headerHeight} borderBottomWidth={this.props.bottomBorderWidth} />
+        <Route exact path='/' component={Home} />
+        <Route path='/about' component={About} />
+        <Route path='/learning' component={Learning} />
+        <Route path='/sorting1' component={BubbleSorting} /> */}
+      </div>
     );
   }
 }
